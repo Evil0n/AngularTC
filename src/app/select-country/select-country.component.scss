@@ -1,0 +1,12 @@
+@import "~src/_variables.scss";
+
+.select-country {
+  display: block;
+  background: map-get($colors, "dark") ;
+  text-align: center;
+  padding: 5px 15px;
+      &__select {
+        background: map-get($colors, "dark2");
+        color: map-get($colors, "light2");
+      }
+}

@@ -1,0 +1,8 @@
+@import "~src/_variables.scss";
+
+.toolbar {
+  background: map-get($colors, "dark2");
+  color: map-get($colors,"regular");
+  padding: 5px 15px;
+  text-align: center;
+}
