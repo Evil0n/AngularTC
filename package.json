@@ -3,6 +3,7 @@
   "name": "tc",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "ng deploy --base-href=/AngularTC/",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
