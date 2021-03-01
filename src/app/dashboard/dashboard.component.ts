@@ -28,7 +28,7 @@ export class DashboardComponent implements OnDestroy {
   }
 
   getWeather(country: string): void {
-    this.http.get(`/assets/${country}.json`).subscribe(result => {
+    this.http.get(`/AngularTC/assets/${country}.json`).subscribe(result => {
       setTimeout(() => {
         this.isLoading = false;
         this.cities = (result as []);
