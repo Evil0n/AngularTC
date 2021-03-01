@@ -1,0 +1,11 @@
+@import "~src/variables";
+:host {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: map-get($colors, 'dark2');
+  font-size: 50px;
+  font-weight: bold;
+  height: calc(100vh - 58px);
+}

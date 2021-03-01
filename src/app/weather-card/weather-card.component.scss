@@ -1,0 +1,52 @@
+@import "~src/_variables.scss";
+$cardBorderRadius: 5px;
+
+:host {
+  border-radius: $cardBorderRadius;
+  box-shadow: 2px 2px 4px 0 map-get($colors, 'dark');
+  background: map-get($colors, 'dark');
+  color: map-get($colors, 'light');
+  padding: 20px;
+  min-width: 300px;
+  max-width: 600px;
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  color: map-get($colors, 'light');
+}
+
+.temperature {
+  font-size: 40px;
+  color: map-get($colors, 'light2');
+  text-align: center;
+}
+
+.other-stats {
+  display: flex;
+  padding: 3px 6px;
+  margin: 0 -12px;
+  justify-content: space-between;
+
+  &__item {
+    border-radius: $cardBorderRadius;
+    background: map-get($colors, 'light');
+    color: map-get($colors, 'dark2');
+    margin: 3px 5px;
+    padding: 5px 20px;
+    text-align: center;
+    word-break: break-all;
+    flex: 1 1 0;
+  }
+  &__label {
+    font-size: 10px;
+  }
+
+  &__value {
+    font-size: 16px;
+  }
+}

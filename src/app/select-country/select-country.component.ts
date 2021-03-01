@@ -1,37 +1,38 @@
-import {Component, OnInit} from '@angular/core';
-import {FormControl} from "@angular/forms";
-import {Router, ActivatedRoute} from "@angular/router";
-
+import {Component, OnDestroy} from '@angular/core';
+import {FormControl} from '@angular/forms';
+import {Router, ActivatedRoute} from '@angular/router';
+import {HttpClient} from '@angular/common/http';
+import {WeatherService} from '../weather.service';
+import {Subscription} from 'rxjs';
 
 @Component({
-  selector: 'select-country',
+  selector: 'app-select-country',
   templateUrl: './select-country.component.html',
   styleUrls: ['./select-country.component.scss']
 })
-export class SelectCountryComponent implements OnInit {
-  selectedCountry = new FormControl('USA');
+export class SelectCountryComponent implements OnDestroy {
+  selectedCountry = new FormControl('');
   countries = [
     {label: 'Russia', value: 'RU'},
     {label: 'UnitedKingdom', value: 'UK'},
     {label: 'Germany', value: 'DE'},
-    {label: 'USA', value: 'USA'}
+    {label: 'USA', value: 'US'}
   ];
+  subscription: Subscription;
 
-  constructor(private router: Router, private route: ActivatedRoute) {
-
+  constructor(private router: Router, private route: ActivatedRoute, private http: HttpClient, private weather: WeatherService) {
+    weather.setCountry(this.selectedCountry.value);
+    this.subscription = weather.country$.subscribe(country => {
+      this.selectedCountry.setValue(country, {emitModelToViewChange: true});
+    });
   }
 
-  onCountryUpdate($event: any) {
-    this.selectedCountry.setValue(($event.currentTarget.value as string), {emitModelToViewChange: true})
-    this.router.navigate([$event.currentTarget.value])
+  onCountryUpdate($event: any): void {
+    this.selectedCountry.setValue(($event.currentTarget.value as string), {emitModelToViewChange: true});
+    this.weather.setCountry(this.selectedCountry.value);
   }
 
-  ngOnInit(): void {
-    // First get the product id from the current route.
-    const routeParams = this.router.routerState.snapshot
-      console.log(routeParams)
-    ;
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
-
-
 }

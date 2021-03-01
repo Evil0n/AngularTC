@@ -1,29 +1,41 @@
-import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router, NavigationEnd } from "@angular/router";
+import {Component, OnDestroy} from '@angular/core';
+import {WeatherService} from '../weather.service';
+import {HttpClient} from '@angular/common/http';
+import {Subscription} from 'rxjs';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent implements OnInit {
-  country:string|null = '';
+export class DashboardComponent implements OnDestroy {
+  isLoading = false;
+  cities = [];
+  subscription: Subscription;
 
-  constructor(private route: ActivatedRoute, private router: Router) {
-router.events.subscribe( (value) => {
-  if (value instanceof NavigationEnd) {
-    this.ngOnInit()
+  constructor(private http: HttpClient, private router: Router, weather: WeatherService, route: ActivatedRoute) {
+    this.subscription = weather.country$.subscribe(country => {
+      router.navigate([country]);
+      this.isLoading = true;
+      this.getWeather(country);
+    });
+    weather.setCountry(route.snapshot.paramMap.get('country') || '');
   }
 
-})
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
-  ngOnInit(): void {
-    // First get the product id from the current route.
-    const routeParams = this.route.snapshot.paramMap;
-
-    // Find the product that correspond with the id provided in route.
-    this.country = routeParams.get('country');
+  getWeather(country: string): void {
+    this.http.get(`/assets/${country}.json`).subscribe(result => {
+      setTimeout(() => {
+        this.isLoading = false;
+        this.cities = (result as []);
+      }, 1000);
+    }, () => {
+        this.isLoading = false;
+        this.router.navigate(['/404']);
+    });
   }
-
 }

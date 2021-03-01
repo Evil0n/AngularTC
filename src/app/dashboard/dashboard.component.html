@@ -1,2 +1,6 @@
-<select-country></select-country>
-<p>{{country}}</p>
+<div class="dashboard" *ngIf="!isLoading">
+  <app-weather-card [city]="city" *ngFor="let city of cities"></app-weather-card>
+</div>
+<div class="dashboard" *ngIf="isLoading">
+  Loading...
+</div>

@@ -1,0 +1,6 @@
+@import "~src/variables";
+:host {
+  display: block;
+  background: map-get($colors, 'light');
+  min-height: 100vh;
+}

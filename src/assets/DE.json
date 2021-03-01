@@ -1,0 +1,51 @@
+[
+  {
+    "city": "Berlin",
+    "temperature": "-12",
+    "pressure": "1032",
+    "wind": "7 m/s",
+    "precipitation": "32%"
+  },
+  {
+    "city": "Hamburg",
+    "temperature": "-14",
+    "pressure": "970",
+    "wind": "8 m/s",
+    "precipitation": "31%"
+  },
+  {
+    "city": "Munich",
+    "temperature": "-11",
+    "pressure": "1021",
+    "wind": "1 m/s",
+    "precipitation": "42%"
+  },
+  {
+    "city": "Cologne",
+    "temperature": "-10",
+    "pressure": "1120",
+    "wind": "2 m/s",
+    "precipitation": "34%"
+  },
+  {
+    "city": "Frankfurt am Main",
+    "temperature": "-17",
+    "pressure": "870",
+    "wind": "8 m/s",
+    "precipitation": "52%"
+  },
+  {
+    "city": "Stuttgart",
+    "temperature": "-7",
+    "pressure": "760",
+    "wind": "4 m/s",
+    "precipitation": "12%"
+  },
+  {
+    "city": "Düsseldorf",
+    "temperature": "-20",
+    "pressure": "976",
+    "wind": "5 m/s",
+    "precipitation": "2%"
+  }
+]
