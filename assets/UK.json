@@ -1,0 +1,37 @@
+[
+  {
+    "city": "London",
+    "temperature": "+5",
+    "pressure": "1032",
+    "wind": "7 m/s",
+    "precipitation": "32%"
+  },
+  {
+    "city": "Liverpool",
+    "temperature": "+4",
+    "pressure": "970",
+    "wind": "8 m/s",
+    "precipitation": "31%"
+  },
+  {
+    "city": "Manchester",
+    "temperature": "+1",
+    "pressure": "1021",
+    "wind": "1 m/s",
+    "precipitation": "42%"
+  },
+  {
+    "city": "Birmingham",
+    "temperature": "0",
+    "pressure": "1120",
+    "wind": "2 m/s",
+    "precipitation": "34%"
+  },
+  {
+    "city": "Oxford",
+    "temperature": "+7",
+    "pressure": "870",
+    "wind": "8 m/s",
+    "precipitation": "52%"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "city": "Moscow",
+    "temperature": "-1",
+    "pressure": "1032",
+    "wind": "7 m/s",
+    "precipitation": "32%"
+  },
+  {
+    "city": "Saint-Petersburg",
+    "temperature": "-5",
+    "pressure": "970",
+    "wind": "8 m/s",
+    "precipitation": "31%"
+  },
+  {
+    "city": "Sochi",
+    "temperature": "+3",
+    "pressure": "1021",
+    "wind": "1 m/s",
+    "precipitation": "42%"
+  },
+  {
+    "city": "Vorkuta",
+    "temperature": "-15",
+    "pressure": "1120",
+    "wind": "2 m/s",
+    "precipitation": "34%"
+  },
+  {
+    "city": "Siktivkar",
+    "temperature": "0",
+    "pressure": "870",
+    "wind": "8 m/s",
+    "precipitation": "52%"
+  },
+  {
+    "city": "Norilsk",
+    "temperature": "-7",
+    "pressure": "760",
+    "wind": "4 m/s",
+    "precipitation": "12%"
+  },
+  {
+    "city": "Niznevartovsk",
+    "temperature": "-30",
+    "pressure": "976",
+    "wind": "5 m/s",
+    "precipitation": "2%"
+  },
+  {
+    "city": "Kaliningrad",
+    "temperature": "5",
+    "pressure": "976",
+    "wind": "5 m/s",
+    "precipitation": "2%"
+  }
+]

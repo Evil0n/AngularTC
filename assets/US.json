@@ -1,0 +1,128 @@
+[
+  {
+    "city": "New-York",
+    "temperature": "-12",
+    "pressure": "1032",
+    "wind": "7 m/s",
+    "precipitation": "32%"
+  },
+  {
+    "city": "Los-Angelos",
+    "temperature": "-14",
+    "pressure": "970",
+    "wind": "8 m/s",
+    "precipitation": "31%"
+  },
+  {
+    "city": "Chicago",
+    "temperature": "-11",
+    "pressure": "1021",
+    "wind": "1 m/s",
+    "precipitation": "42%"
+  },
+  {
+    "city": "Houston",
+    "temperature": "-10",
+    "pressure": "1120",
+    "wind": "2 m/s",
+    "precipitation": "34%"
+  },
+  {
+    "city": "Phoenix",
+    "temperature": "-17",
+    "pressure": "870",
+    "wind": "8 m/s",
+    "precipitation": "52%"
+  },
+  {
+    "city": "Philadelphia",
+    "temperature": "-7",
+    "pressure": "760",
+    "wind": "4 m/s",
+    "precipitation": "12%"
+  },
+  {
+    "city": "San-Antonio",
+    "temperature": "-20",
+    "pressure": "976",
+    "wind": "5 m/s",
+    "precipitation": "2%"
+  },
+  {
+    "city": "San-Diego",
+    "temperature": "-7",
+    "pressure": "760",
+    "wind": "4 m/s",
+    "precipitation": "12%"
+  },
+  {
+    "city": "Dallas",
+    "temperature": "-20",
+    "pressure": "976",
+    "wind": "5 m/s",
+    "precipitation": "2%"
+  },
+  {
+    "city": "San Jose",
+    "temperature": "-12",
+    "pressure": "1032",
+    "wind": "7 m/s",
+    "precipitation": "32%"
+  },
+  {
+    "city": "Austin",
+    "temperature": "-14",
+    "pressure": "970",
+    "wind": "8 m/s",
+    "precipitation": "31%"
+  },
+  {
+    "city": "Jacksonville",
+    "temperature": "-11",
+    "pressure": "1021",
+    "wind": "1 m/s",
+    "precipitation": "42%"
+  },
+  {
+    "city": "Fort Worth",
+    "temperature": "-10",
+    "pressure": "1120",
+    "wind": "2 m/s",
+    "precipitation": "34%"
+  },
+  {
+    "city": "Columbus",
+    "temperature": "-17",
+    "pressure": "870",
+    "wind": "8 m/s",
+    "precipitation": "52%"
+  },
+  {
+    "city": "Charlotte",
+    "temperature": "-7",
+    "pressure": "760",
+    "wind": "4 m/s",
+    "precipitation": "12%"
+  },
+  {
+    "city": "San-Francisco",
+    "temperature": "-20",
+    "pressure": "976",
+    "wind": "5 m/s",
+    "precipitation": "2%"
+  },
+  {
+    "city": "Indianapolis",
+    "temperature": "-7",
+    "pressure": "760",
+    "wind": "4 m/s",
+    "precipitation": "12%"
+  },
+  {
+    "city": "Seattle",
+    "temperature": "-20",
+    "pressure": "976",
+    "wind": "5 m/s",
+    "precipitation": "2%"
+  }
+]
